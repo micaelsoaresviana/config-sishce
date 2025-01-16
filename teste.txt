@@ -5,18 +5,10 @@ O problema pode estar relacionado à forma como o pyautogui.write() envia as tec
 O módulo keyboard pode ser uma alternativa mais confiável para digitar texto em alguns casos.
 
 Instale a biblioteca:
-bash
-Copiar
-Editar
 pip install keyboard
+
 Exemplo de uso:
-python
-Copiar
-Editar
 import keyboard
 
-# Texto que será digitado
-url = "http://sishceapprod.hce.eb:9001/forms/frmservlet?config=sishce"
-
 # Envia o texto para o campo ativo
-keyboard.write(url)
+keyboard.write("http://sishceapprod.hce.eb:9001/forms/frmservlet?config=sishce")
