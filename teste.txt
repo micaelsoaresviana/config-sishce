@@ -1,1 +1,14 @@
-ola.
+
+O problema pode estar relacionado à forma como o pyautogui.write() envia as teclas. Ele simula digitação, mas em algumas situações, como campos de entrada ou configurações específicas do Windows, os caracteres podem não ser aceitos corretamente. Para resolver isso, você pode tentar as seguintes abordagens:
+
+1. Use o módulo keyboard
+O módulo keyboard pode ser uma alternativa mais confiável para digitar texto em alguns casos.
+
+Instale a biblioteca:
+pip install keyboard
+
+Exemplo de uso:
+import keyboard
+
+# Envia o texto para o campo ativo
+keyboard.write("http://sishceapprod.hce.eb:9001/forms/frmservlet?config=sishce")

@@ -1,5 +1,6 @@
 import pyautogui
 import time
+import keyboard
 
 pyautogui.press("win")
 time.sleep(3)
@@ -7,7 +8,7 @@ pyautogui.write("Edge")
 time.sleep(1)
 pyautogui.press("enter")
 time.sleep(1)
-pyautogui.write("http://sishceapprod.hce.eb:9001/forms/frmservlet?config=sishce")
+keyboard.write("http://sishceapprod.hce.eb:9001/forms/frmservlet?config=sishce")
 time.sleep(3)
 pyautogui.click(x=1385, y=53)
 time.sleep(3)
@@ -25,7 +26,7 @@ pyautogui.click(x=1148, y=375)
 time.sleep(1)
 pyautogui.click(x=1166, y=479)
 time.sleep(1)
-pyautogui.write("http://sishceapprod.hce.eb:9001/forms/frmservlet?config=sishce", interval=0.1)
+pyautogui.write("http://sishceapprod.hce.eb:9001/forms/frmservlet%3Fconfig=sishce", interval=0.1)
 pyautogui.press("tab")
 time.sleep(1)
 pyautogui.press("enter")
